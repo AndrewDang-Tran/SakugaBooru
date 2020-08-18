@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.percent.PercentRelativeLayout
+    android:id="@+id/sortFragmentLayout" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:background="@android:color/transparent"> <RelativeLayout android:id="@+id/sortTitleLayout" android:layout_width="0dp" android:layout_height="0dp" app:layout_widthPercent="60%" app:layout_heightPercent="7%" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:background="@color/black" android:clickable="false">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Sort By"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/ascDescButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/arrowhead_down_teal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/newLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="60%"
+        app:layout_heightPercent="10%"
+        android:layout_below="@id/sortTitleLayout"
+        android:weightSum="10"
+        android:background="@color/black"
+        android:clickable="false">
+
+        <ImageView
+            android:id="@+id/newImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:src="@drawable/new_teal" />
+
+        <TextView
+            android:id="@+id/newText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:text="New"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scoreLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="60%"
+        app:layout_heightPercent="15%"
+        android:layout_below="@id/newLayout"
+        android:weightSum="10"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/scoreImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:src="@drawable/heart_lightgrey" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:text="Score"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

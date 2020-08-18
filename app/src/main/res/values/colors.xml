@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="semiBlack">#222222</color>
+    <color name="darkGray">#545452</color>
+    <color name="paleGrey">#A5A4A4</color>
+    <color name="black">#000000</color>
+    <color name="teal">#13B89F</color>
+    <color name="DKGRAY">#ff444444</color>
+    <color name="blueLink">#336699</color>
+</resources>
+
+
